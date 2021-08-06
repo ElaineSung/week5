@@ -1,0 +1,7 @@
+.card {
+    border: 1px solid $gray-400;
+    &-header {
+        background-color: $gray-100;
+        border-bottom: 1px solid $gray-400;
+    }
+}

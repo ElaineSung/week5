@@ -1,61 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
 
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title><%- title %></title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
-    <link rel="stylesheet" href="./assets/style/all.css">
-  </head>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<title><%- title %></title>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
+		<!-- material icon -->
+		<link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Material+Icons+Outlined" rel="stylesheet">
+		<!-- all css -->
+		<link rel="stylesheet" href="./assets/style/all.css">
+	</head>
 
-  <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">Navbar</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Dropdown
-              </a>
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li><hr class="dropdown-divider"></li>
-                <li><a class="dropdown-item" href="#">Something else here</a></li>
-              </ul>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-            </li>
-          </ul>
-          <form class="d-flex">
-            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success" type="submit">Search</button>
-          </form>
-        </div>
-      </div>
-    </nav>
+	<body>
+		<div class="bd-sidebar bg-light py-6 d-flex flex-column justify-content-between">
+			<nav class="nav flex-column">
+				<h1 class="ps-6 mb-6"><a href="#"></a></h1>
+				<a class="nav-link link-hover d-flex align-items-center fw-bold" aria-current="page" href="#">
+					<i class="material-icons me-3">assessment</i>Dashboard
+				</a>
+				<a class="nav-link link-hover d-flex align-items-center fw-bold" href="#">
+					<i class="material-icons me-3">question_answer</i>Question
+				</a>
+				<a class="nav-link link-hover d-flex align-items-center fw-bold <%= current === 'index' && 'active' %>" href="index.html">
+					<i class="material-icons me-3">assignment</i>Assignment
+				</a>
+				<a class="nav-link link-hover d-flex align-items-center fw-bold" href="#">
+					<i class="material-icons me-3">video_library</i>Course
+				</a>
+				<a class="nav-link link-hover d-flex align-items-center fw-bold <%= current === 'admin' && 'active' %>" href="admin.html">
+					<i class="material-icons me-3">supervisor_account</i>Admin
+				</a>
+				<a class="nav-link link-hover d-flex align-items-center fw-bold" href="#">
+					<i class="material-icons me-3">settings</i>Settings
+				</a>
+			</nav>
+			<div class="user d-flex align-items-center ms-6 lh-1">
+				<div class="rounded-circle overflow-hidden me-3">
+					<a href="#"><img src="./assets/images/andychen.jpg" alt="Andy Chen"></a>
+				</div>
+				<div>
+					<p class="fw-bold mb-1">Andy Chen</p>
+					<p class="fs-7 text-secondary">andy0401@mail.com</p>
+				</div>
+			</div>
+		</div>
 
-    <%- contents %>
+		<main class="bd-main">
+			<%- contents %>
+		</main>
 
-    <footer class="footer">
-      footer
-    </footer>
-
-    <script src="./assets/js/vendors.js"></script>
-    <script src="./assets/js/all.js"></script>
-  </body>
+		<script src="./assets/js/vendors.js"></script>
+		<script src="./assets/js/all.js"></script>
+	</body>
 
 </html>

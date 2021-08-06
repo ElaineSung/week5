@@ -1,0 +1,17 @@
+h1 a {
+	display: block;
+	background-image: url("../images/logo-ANSWER.svg");
+	width: 151px;
+	height: 40px;
+	text-indent: 101%;
+	overflow: hidden;
+	white-space: nowrap;
+}
+
+/* 內文溢出-多行 */
+.text-truncate-multi {
+	overflow: hidden;
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 3;
+}
