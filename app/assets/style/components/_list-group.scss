@@ -1,4 +1,8 @@
 .list-group-item.active {
-    background-color: $gray-100;
-    border: 1px solid $gray-400;
+	background-color: $gray-100;
+	border: 1px solid $gray-400;
+}
+.list-group-item + .list-group-item.active {
+    margin-top: 0px;
+    border-top-width: 0px;
 }

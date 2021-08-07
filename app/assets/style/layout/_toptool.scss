@@ -1,0 +1,8 @@
+.toptool {
+    .navbar {
+        min-height: 40px;
+        .btn-check:focus + .btn, .btn:focus {
+            box-shadow: none;
+        }
+    }
+}

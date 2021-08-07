@@ -1,0 +1,5 @@
+/* Overflow */
+@mixin overflow-auto($height) {
+	overflow: auto;
+    max-height: $height;
+}

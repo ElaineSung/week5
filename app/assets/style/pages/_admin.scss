@@ -1,0 +1,24 @@
+.admin {
+	.table {
+		margin-bottom: 60px;
+		td, th {
+			padding: 19px 8px 17px 0;
+		}
+	}
+	.modal-body-inner {
+		@include overflow-auto(600px);
+	}
+	#watch-admin-modal {
+		.modal-body-user {
+			width: 140px;
+			height: 140px;
+			object-fit: cover;
+			border-radius: 2px;
+		}
+	}
+	.collapse-btn.collapsed {
+		.expand_less {
+			transform: rotate(-180deg);
+		}
+	}
+}
