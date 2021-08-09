@@ -1,12 +1,15 @@
 .btn-hover,
 .link-hover{
-    &:hover{
-        color: $success !important;
-    }
+	&:hover{
+		color: $success !important;
+	}
 }
 .btn-outline-success:disabled,
 .btn-outline-success.disabled {
 	color: $gray-400;
-    background-color: transparent;
+	background-color: transparent;
 	border-color: $gray-400;
+}
+.btn-check:focus + .btn-success, .btn-success:focus {
+	box-shadow: none;
 }
