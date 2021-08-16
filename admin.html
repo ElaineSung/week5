@@ -18,24 +18,38 @@
 		<div class="bd-sidebar bg-light py-6 d-flex flex-column justify-content-between">
 			<nav class="nav flex-column">
 				<h1 class="ps-6 mb-6"><a href="#"></a></h1>
-				<a class="nav-link link-hover d-flex align-items-center fw-bold" aria-current="page" href="#">
-					<i class="material-icons me-3">assessment</i>Dashboard
-				</a>
-				<a class="nav-link link-hover d-flex align-items-center fw-bold" href="#">
-					<i class="material-icons me-3">question_answer</i>Question
-				</a>
-				<a class="nav-link link-hover d-flex align-items-center fw-bold false" href="index.html">
-					<i class="material-icons me-3">assignment</i>Assignment
-				</a>
-				<a class="nav-link link-hover d-flex align-items-center fw-bold" href="#">
-					<i class="material-icons me-3">video_library</i>Course
-				</a>
-				<a class="nav-link link-hover d-flex align-items-center fw-bold active" href="admin.html">
-					<i class="material-icons me-3">supervisor_account</i>Admin
-				</a>
-				<a class="nav-link link-hover d-flex align-items-center fw-bold" href="#">
-					<i class="material-icons me-3">settings</i>Settings
-				</a>
+				<ul class="list-unstyled mb-0">
+					<li>
+						<a class="nav-link link-hover d-flex align-items-center fw-bold" aria-current="page" href="#">
+							<i class="material-icons me-3">assessment</i>Dashboard
+						</a>
+					</li>
+					<li>
+						<a class="nav-link link-hover d-flex align-items-center fw-bold" href="#">
+							<i class="material-icons me-3">question_answer</i>Question
+						</a>
+					</li>
+					<li>
+						<a class="nav-link link-hover d-flex align-items-center fw-bold false" href="index.html">
+							<i class="material-icons me-3">assignment</i>Assignment
+						</a>
+					</li>
+					<li>
+						<a class="nav-link link-hover d-flex align-items-center fw-bold" href="#">
+							<i class="material-icons me-3">video_library</i>Course
+						</a>
+					</li>
+					<li>
+						<a class="nav-link link-hover d-flex align-items-center fw-bold active" href="admin.html">
+							<i class="material-icons me-3">supervisor_account</i>Admin
+						</a>
+					</li>
+					<li>
+						<a class="nav-link link-hover d-flex align-items-center fw-bold" href="#">
+							<i class="material-icons me-3">settings</i>Settings
+						</a>
+					</li>
+				</ul>
 			</nav>
 			<div class="user d-flex align-items-center ms-6 lh-1">
 				<div class="rounded-circle overflow-hidden me-3">
@@ -258,7 +272,7 @@
 					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
 				</div>
 				<div class="modal-body modal-body-inner px-6">
-					<form class="border-bottom pb-5">
+					<form>
 						<h5 class="fw-bold mb-3">Account</h5>
 						<div class="mb-3">
 							<label for="name" class="form-label mb-1">Name</label>
@@ -268,13 +282,15 @@
 							<label for="email-1" class="form-label mb-1">Email</label>
 							<input type="email" id="email-1" class="form-control py-8 border-dark rounded-1" name="email">
 						</div>
-					</form>
-					<form class="border-bottom py-5">
+
+						<div class="border-bottom pb-5 mb-5"></div>
+
 						<h5 class="fw-bold mb-3">Verification</h5>
 						<p class="fw-bold mb-3"><i class="material-icons text-danger me-2">report_problem</i>Unverified</p>
-						<button type="submit w-100" class="btn btn-outline-success fw-bold py-8 w-100 rounded-1">Send Verification Mail</button>
-					</form>
-					<form class="border-bottom py-5">
+						<button type="button" class="btn btn-outline-success fw-bold py-8 w-100 rounded-1">Send Verification Mail</button>
+
+						<div class="border-bottom pb-5 mb-5"></div>
+
 						<h5 class="fw-bold mb-3">Access Level</h5>
 						<select class="form-select border-dark rounded-1 text-secondary py-8" aria-label="example">
 							<option selected class="text-secondary">-Choose access level-</option>
@@ -282,8 +298,9 @@
 							<option value="2">Two</option>
 							<option value="3">Three</option>
 						</select>
-					</form>
-					<form class="pt-5">
+
+						<div class="border-bottom pb-5 mb-5"></div>
+
 						<h5 class="fw-bold mb-3">Custom Access</h5>
 						<div class="form-check mb-3">
 							<input type="checkbox" class="form-check-input border-dark rounded-0 mb-2" id="check1">
@@ -327,7 +344,7 @@
 							<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
 						</div>
 						<p class="text-dark lh-1">Admin</p>
-						<p class="fs-4 fw-bold text-dark mb-2 lh-sm">Emir Wicks</p>
+						<h4 class="fw-bold text-dark mb-2 lh-sm">Emir Wicks</h4>
 						<p class="fs-7 text-secondary mb-3 lh-1">emir.wicks@mail.com</p>
 						<!-- collapse -->
 						<a class="collapse-btn d-flex justify-content-between align-items-center collapsed"
@@ -357,7 +374,7 @@
 					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
 				</div>
 				<div class="modal-body modal-body-inner px-6">
-					<form class="border-bottom pb-5">
+					<form>
 						<h5 class="fw-bold mb-3">Account</h5>
 						<div class="mb-3">
 							<label for="name" class="form-label mb-1">Name</label>
@@ -367,24 +384,27 @@
 							<label for="email-1" class="form-label mb-1">Email</label>
 							<input type="email" id="email-1" class="form-control py-8 rounded-1" name="email" placeholder="emir.wicks@mail.com" disabled>
 						</div>
-					</form>
-					<form class="border-bottom py-5">
+
+						<div class="border-bottom pb-5 mb-5"></div>
+
 						<h5 class="fw-bold mb-3">Verification</h5>
 						<div class="d-flex justify-content-between align-items-center mb-3">
 							<p class="fw-bold"><i class="material-icons text-success me-2">check_circle</i>Verified</p>
 							<p class="fs-7">2020/4/12</p>
 						</div>
-						<button type="submit w-100" class="btn btn-outline-success fw-bold py-8 w-100 rounded-1" disabled>Send Verification Mail</button>
-					</form>
-					<form class="border-bottom py-5">
+						<button type="button" class="btn btn-outline-success fw-bold py-8 w-100 rounded-1" disabled>Send Verification Mail</button>
+
+						<div class="border-bottom pb-5 mb-5"></div>
+
 						<h5 class="fw-bold mb-3">Access Level</h5>
 						<select class="form-select border-dark rounded-1 py-8" aria-label=".form-select-lg example">
 							<option value="1">Admin</option>
 							<option value="2">Two</option>
 							<option value="3">Three</option>
 						</select>
-					</form>
-					<form class="border-bottom py-5">
+
+						<div class="border-bottom pb-5 mb-5"></div>
+
 						<h5 class="fw-bold mb-3">Custom Access</h5>
 						<div class="form-check mb-3">
 							<input type="checkbox" class="form-check-input border-dark rounded-0 mb-2" id="check6">
@@ -406,11 +426,13 @@
 							<input type="checkbox" class="form-check-input border-dark rounded-0" id="check10">
 							<label class="form-check-label" for="check10">Task Menu</label>
 						</div>
-					</form>
-					<form class="pt-5">
+
+						<div class="border-bottom pb-5 mb-5"></div>
+
 						<h5 class="fw-bold mb-3">Verification</h5>
-						<p class="fw-bold  mb-3"><i class="material-icons text-danger me-2">report_problem</i>Deactivate Account</p>
-						<button type="submit w-100" class="btn btn-outline-danger fw-bold py-8 w-100 rounded-1">Deactivate This Account</button>
+						<p class="fw-bold mb-3 text-danger"><i class="material-icons text-danger me-2">report_problem</i>Deactivate Account</p>
+						<button type="button" class="btn btn-outline-danger fw-bold py-8 w-100 rounded-1">Deactivate This Account</button>
+
 					</form>
 				</div>
 				<div class="modal-footer border-top-0 py-3 px-6">

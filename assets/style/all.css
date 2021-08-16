@@ -12649,6 +12649,7 @@ fieldset:disabled .btn {
 body {
   font-family: 'Lato', sans-serif;
   line-height: 1.5;
+  color: #000;
 }
 
 img {
@@ -12672,16 +12673,6 @@ p {
   margin: 0;
 }
 
-h1 a, .h1 a {
-  display: block;
-  background-image: url("../images/logo-ANSWER.svg");
-  width: 151px;
-  height: 40px;
-  text-indent: 101%;
-  overflow: hidden;
-  white-space: nowrap;
-}
-
 /* 內文溢出-多行 */
 .text-truncate-multi {
   overflow: hidden;
@@ -12698,10 +12689,6 @@ h1 a, .h1 a {
 .u-content-none::before,
 .u-content-none::after {
   content: none;
-}
-
-.w-100 {
-  width: 100%;
 }
 
 /* Overflow */
@@ -12745,6 +12732,16 @@ h1 a, .h1 a {
   z-index: 100;
   max-width: 296px;
   min-height: 100vh;
+}
+
+.bd-sidebar h1 a, .bd-sidebar .h1 a {
+  display: block;
+  background-image: url("../images/logo-ANSWER.svg");
+  width: 151px;
+  height: 40px;
+  text-indent: 101%;
+  overflow: hidden;
+  white-space: nowrap;
 }
 
 .bd-sidebar .nav-link {
